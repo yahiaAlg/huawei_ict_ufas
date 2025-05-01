@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
+{% endblock extra_css %}
+{% block content %}
+
+    <!-- about content -->
+    <div class="about-container">
+      <h1 class="text-center mb-5">About Huawei ICT Academy</h1>
+
+      <!-- Mission Statement -->
+      <div class="mission-card">
+        <h2 class="text-center mb-4">Our Mission</h2>
+        <p class="lead text-center">
+          Bridging the gap between industry and academia by cultivating ICT
+          talent ecosystem and promoting industry development.
+        </p>
+      </div>
+
+      <!-- Key Features -->
+      <h2 class="section-title">What We Offer</h2>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card feature-card">
+            <div class="card-body text-center">
+              <i class="bi bi-laptop feature-icon"></i>
+              <h3 class="card-title">Industry-Leading Curriculum</h3>
+              <p class="card-text">
+                Access to Huawei's latest technology courses and certification
+                paths
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card">
+            <div class="card-body text-center">
+              <i class="bi bi-people feature-icon"></i>
+              <h3 class="card-title">Expert Instructors</h3>
+              <p class="card-text">
+                Learn from certified Huawei instructors and industry
+                professionals
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card">
+            <div class="card-body text-center">
+              <i class="bi bi-graph-up feature-icon"></i>
+              <h3 class="card-title">Career Development</h3>
+              <p class="card-text">
+                Direct pathway to industry recognition and professional growth
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <h2 class="section-title">Our Impact</h2>
+      <div class="row g-4 mb-5">
+        <div class="col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">2000+</div>
+            <div class="stat-label">Partner Institutions</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Students Certified</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Countries</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">90%</div>
+            <div class="stat-label">Employment Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Programs -->
+      <h2 class="section-title">Our Programs</h2>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6">
+          <div class="card feature-card">
+            <div class="card-body">
+              <h3>Certification Tracks</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>HCIA
+                  (Associate Level)
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>HCIP
+                  (Professional Level)
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>HCIE
+                  (Expert Level)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card feature-card">
+            <div class="card-body">
+              <h3>Technology Domains</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>Cloud
+                  Computing & AI
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>5G &
+                  Networking
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>Big
+                  Data & IoT
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center mb-5">
+        <h2 class="mb-4">Join Our Network</h2>
+        <p class="lead mb-4">Become part of the global ICT talent ecosystem</p>
+        <a
+          href="./index.html#join-us"
+          class="btn btn-lg"
+          style="background-color: var(--huawei-blue); color: white"
+        >
+          Apply Now
+        </a>
+      </div>
+    </div>
+
+{% endblock content %}
+{% block extra_js %}{% endblock extra_js %}

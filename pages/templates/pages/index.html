@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+    Home
+{% endblock title %}
+{% block content %}
+
+    {% include "partials/components/hero_section.html" %}
+    {% include "partials/components/_carousel.html" with announcements=announcements %}
+    {% include "partials/components/gallery_section.html" with gallery_images=gallery_images %}
+    {% include "partials/components/courses_section.html" with courses=courses %}
+    {% include "partials/components/joinus_section.html" %}
+    {% include "partials/components/features_section.html" %}
+    {% include "partials/components/certificate_section.html" %}
+    {% include "partials/components/statistics_section.html" %}
+    {% include "partials/components/testimonials_section.html" %}
+    {% include "partials/components/cta_section.html" %}
+    {% include "partials/components/_contact_form.html " %}
+
+{% endblock content %}

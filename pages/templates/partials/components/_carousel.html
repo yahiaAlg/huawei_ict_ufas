@@ -1,0 +1,33 @@
+<!-- News Carousel Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Latest News</h2>
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for announcement in announcements %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <div class="card">
+              <img src="{{ announcement.image.url }}" alt="image" class="card-img" />
+              <div class="card-body">
+                <h4 {% if announcement.is_rtl %}dir="rtl"{% endif %}>
+                  {{ announcement.title }}
+                </h4>
+                <p {% if announcement.is_rtl %}dir="rtl"{% endif %}>
+                  {{ announcement.date|date:"l d F Y" }} {{ announcement.date|time:"g:i a" }}
+                  <br />
+                  Location: {{ announcement.location }}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
