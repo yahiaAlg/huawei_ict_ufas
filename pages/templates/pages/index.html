@@ -14,6 +14,93 @@
     {% include "partials/components/statistics_section.html" %}
     {% include "partials/components/testimonials_section.html" %}
     {% include "partials/components/cta_section.html" %}
-    {% include "partials/components/contact_form.html " %}
+    {% comment %} {% include "partials/components/contact_form.html " %} {% endcomment %}
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light" id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6 h">
+            <h2>Contact Us</h2>
+            <form id="contactForm" class="mt-4">
+            <div class="mb-3">
+                <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Your Name"
+                required
+                />
+            </div>
+            <div class="mb-3">
+                <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Your Email"
+                required
+                />
+            </div>
+            <div class="mb-3">
+                <textarea
+                id="message"
+                class="form-control"
+                rows="5"
+                placeholder="Your Message"
+                style="height: 422px"
+                required
+                ></textarea>
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-primary">
+                Send Message
+            </button>
+            <!-- Add these elements for status messages -->
+            <div id="loadingIndicator" class="d-none text-primary mt-3">
+                Sending message...
+            </div>
+            <div id="successMessage" class="text-success mt-3"></div>
+            <div id="errorMessage" class="text-danger mt-3"></div>
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <h2>Follow Us</h2>
+            <div class="social-links mt-4">
+            <a href="#" class="btn btn-primary me-2"
+                ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="btn btn-info me-2"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="btn btn-primary me-2"
+                ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="btn btn-danger"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="contact-info mt-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.6605212788886!2d5.360882899999999!3d36.199137199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f33e5aec0d08ed%3A0x9bad906e04d7b7cd!2sFaculty%20Of%20Science!5e0!3m2!1sen!2sdz!4v1734268777624!5m2!1sen!2sdz"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-100"
+            ></iframe>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:03620126">03620126</a>
+            </p>
+            <p>
+                <a href="mailto:ufas1-huawei-ict@gmail.com"
+                ><i class="fas fa-envelope"></i>ufas1-huawei-ict@gmail.com</a
+                >
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
 
 {% endblock content %}
