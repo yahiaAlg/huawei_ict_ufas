@@ -22,7 +22,6 @@ class GalleryImage(models.Model):
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to='gallery/')
     created_at = models.DateTimeField(auto_now_add=True)
-    forward_link = models.URLField(blank=True, null=True)
     def __str__(self):
         return self.title
     
@@ -34,6 +33,7 @@ class Course(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='images/')
     slug = models.SlugField(unique=True)
+    forward_link = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.name
