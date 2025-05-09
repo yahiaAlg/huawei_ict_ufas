@@ -6,11 +6,19 @@
       {% for course in courses %}
       <div class="col-lg-4 col-md-6">
         <div class="card course-card">
-          <img src="{{ course.image.url }}" class="card-img-top" alt="{{ course.name }}" />
+          <img
+            src="{{ course.image.url }}"
+            class="card-img-top"
+            alt="{{ course.name }}"
+          />
           <div class="card-body text-center">
             <h3>{{ course.name }}</h3>
             <p>{{ course.description }}</p>
-            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            <a
+              href="{{course.forward_link.url}}"
+              class="btn btn-outline-primary mt-3"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
